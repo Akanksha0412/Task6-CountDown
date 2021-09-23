@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p id="countdown" class="des1"></p>
+    <h1 id="birthText" class="des2"></h1>
+    
+    <script>
+        var time=10;
+        var count = document.getElementById("countdown");
+        var birthdayText = document.getElementById("birthText");
+
+        function startCountdown(){
+            setTimeout(function(){
+                count.innerText=(time);
+                setTimeout(function(){
+                    count.innerText=(--time);
+                    setTimeout(function(){
+                        count.innerText=(--time);
+                        setTimeout(function(){
+                            count.innerText=(--time);
+                            setTimeout(function(){
+                                count.innerText=(--time);
+                                setTimeout(function(){
+                                    count.innerText=(--time);
+                                    setTimeout(function(){
+                                        count.innerText=(--time);
+                                        setTimeout(function(){
+                                            count.innerText=(--time);
+                                            setTimeout(function(){
+                                                count.innerText=(--time);
+                                                setTimeout(function(){
+                                                    count.innerText=(--time);
+                                                    setTimeout(function(){
+                                                        count.innerText=(--time);
+                                                        setTimeout(function(){
+                                                            count.innerText="";
+                                                            birthdayText.innerText="HAPPY BIRTHDAY TO YOU";
+                                                        },1000)
+                                                    },1000)
+                                                },1000)
+                                            },1000)
+                                        },1000)
+                                    },1000)
+                                },1000)
+                            },1000)
+                        },1000)
+                    },1000)
+                },1000)
+            },0)
+        }
+        startCountdown();
+    </script>
+</body>
+</html>
